@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		133733372BF4984300941F04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133733362BF4984300941F04 /* AppDelegate.swift */; };
+		133733392BF4984300941F04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133733382BF4984300941F04 /* ContentView.swift */; };
+		1337333B2BF4984500941F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1337333A2BF4984500941F04 /* Assets.xcassets */; };
+		1337333E2BF4984500941F04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1337333D2BF4984500941F04 /* Preview Assets.xcassets */; };
+		133733462BF4B00200941F04 /* Indonesian ghost kuntilanak.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 133733452BF4B00200941F04 /* Indonesian ghost kuntilanak.usdz */; };
+		134B0C102BFCEC3C00A0A9B2 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134B0C0F2BFCEC3C00A0A9B2 /* TutorialView.swift */; };
+		13A1F20D2BF6F0100000D548 /* Indonesian ghost kuntilanak.scn in Resources */ = {isa = PBXBuildFile; fileRef = 13A1F20C2BF6F0100000D548 /* Indonesian ghost kuntilanak.scn */; };
+		13A1F2142BF9DB190000D548 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1F2132BF9DB190000D548 /* HomePageView.swift */; };
+		13A1F21F2BF9F8BA0000D548 /* WaterBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13A1F21E2BF9F8BA0000D548 /* WaterBrush-Regular.ttf */; };
+		13A1F2212BF9F8C50000D548 /* BebasNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13A1F2202BF9F8C50000D548 /* BebasNeue-Regular.ttf */; };
+		13A1F2232BF9F8E40000D548 /* Scary Dance Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 13A1F2222BF9F8E40000D548 /* Scary Dance Demo.otf */; };
+		13A1F2262BFA007C0000D548 /* SreeKrushnadevaraya-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13A1F2252BFA007C0000D548 /* SreeKrushnadevaraya-Regular.ttf */; };
+		13A1F22D2BFA12570000D548 /* Rain Thunderstorm Loop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 13A1F22B2BFA12560000D548 /* Rain Thunderstorm Loop.mp3 */; };
+		13A1F22E2BFA12570000D548 /* Night Forest 1224.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 13A1F22C2BFA12570000D548 /* Night Forest 1224.mp3 */; };
+		13A1F2312BFA27200000D548 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1F2302BFA27200000D548 /* OnboardingView.swift */; };
+		13A1F2332BFA2F510000D548 /* TypingAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1F2322BFA2F510000D548 /* TypingAnimationView.swift */; };
+		13A1F23B2BFA39530000D548 /* Blood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1F23A2BFA39530000D548 /* Blood.swift */; };
+		13A1F23E2BFA3A760000D548 /* Scary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1F23D2BFA3A760000D548 /* Scary.swift */; };
+		13A1F2402BFA3C910000D548 /* Scary Wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 13A1F23F2BFA3C910000D548 /* Scary Wind.mp3 */; };
+		13A1F2582BFAFFA70000D548 /* Kuntilanak.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 13A1F2572BFAFFA70000D548 /* Kuntilanak.rcproject */; };
+		13A1F25E2BFB2D220000D548 /* JudulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1F25D2BFB2D220000D548 /* JudulView.swift */; };
+		13A1F2602BFB60D80000D548 /* Wewegombel.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 13A1F25F2BFB60D80000D548 /* Wewegombel.rcproject */; };
+		13C4C1AD2BFC422F0073F641 /* ARCoachingOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C4C1AC2BFC422F0073F641 /* ARCoachingOverlayView.swift */; };
+		13C4C1B52BFC51500073F641 /* Hantu.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 13C4C1B42BFC51500073F641 /* Hantu.rcproject */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		133733332BF4984300941F04 /* Nano2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		133733362BF4984300941F04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		133733382BF4984300941F04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1337333A2BF4984500941F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1337333D2BF4984500941F04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		133733452BF4B00200941F04 /* Indonesian ghost kuntilanak.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Indonesian ghost kuntilanak.usdz"; sourceTree = "<group>"; };
+		134B0C0F2BFCEC3C00A0A9B2 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		13A1F20C2BF6F0100000D548 /* Indonesian ghost kuntilanak.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Indonesian ghost kuntilanak.scn"; sourceTree = "<group>"; };
+		13A1F2132BF9DB190000D548 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		13A1F21E2BF9F8BA0000D548 /* WaterBrush-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WaterBrush-Regular.ttf"; sourceTree = "<group>"; };
+		13A1F2202BF9F8C50000D548 /* BebasNeue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Regular.ttf"; sourceTree = "<group>"; };
+		13A1F2222BF9F8E40000D548 /* Scary Dance Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scary Dance Demo.otf"; sourceTree = "<group>"; };
+		13A1F2252BFA007C0000D548 /* SreeKrushnadevaraya-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SreeKrushnadevaraya-Regular.ttf"; path = "../../../../../../Downloads/Bebas Neue Sree Krushnadevaraya Water Brush/Sree_Krushnadevaraya/SreeKrushnadevaraya-Regular.ttf"; sourceTree = "<group>"; };
+		13A1F22B2BFA12560000D548 /* Rain Thunderstorm Loop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rain Thunderstorm Loop.mp3"; sourceTree = "<group>"; };
+		13A1F22C2BFA12570000D548 /* Night Forest 1224.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Night Forest 1224.mp3"; sourceTree = "<group>"; };
+		13A1F2302BFA27200000D548 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		13A1F2322BFA2F510000D548 /* TypingAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingAnimationView.swift; sourceTree = "<group>"; };
+		13A1F23A2BFA39530000D548 /* Blood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blood.swift; sourceTree = "<group>"; };
+		13A1F23D2BFA3A760000D548 /* Scary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scary.swift; sourceTree = "<group>"; };
+		13A1F23F2BFA3C910000D548 /* Scary Wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Scary Wind.mp3"; sourceTree = "<group>"; };
+		13A1F2572BFAFFA70000D548 /* Kuntilanak.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Kuntilanak.rcproject; sourceTree = "<group>"; };
+		13A1F25D2BFB2D220000D548 /* JudulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JudulView.swift; sourceTree = "<group>"; };
+		13A1F25F2BFB60D80000D548 /* Wewegombel.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Wewegombel.rcproject; sourceTree = "<group>"; };
+		13C4C1AC2BFC422F0073F641 /* ARCoachingOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCoachingOverlayView.swift; sourceTree = "<group>"; };
+		13C4C1B42BFC51500073F641 /* Hantu.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Hantu.rcproject; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		133733302BF4984300941F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1337332A2BF4984300941F04 = {
+			isa = PBXGroup;
+			children = (
+				13A1F25D2BFB2D220000D548 /* JudulView.swift */,
+				13A1F23C2BFA39670000D548 /* Component */,
+				133733352BF4984300941F04 /* Nano2 */,
+				133733342BF4984300941F04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		133733342BF4984300941F04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				133733332BF4984300941F04 /* Nano2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		133733352BF4984300941F04 /* Nano2 */ = {
+			isa = PBXGroup;
+			children = (
+				133733362BF4984300941F04 /* AppDelegate.swift */,
+				133733382BF4984300941F04 /* ContentView.swift */,
+				13A1F2162BF9F8030000D548 /* Font */,
+				13A1F20E2BF74A960000D548 /* View */,
+				133733442BF4ABED00941F04 /* 3D Model */,
+				1337333A2BF4984500941F04 /* Assets.xcassets */,
+				13A1F22F2BFA125C0000D548 /* Mp3 */,
+				1337333C2BF4984500941F04 /* Preview Content */,
+			);
+			path = Nano2;
+			sourceTree = "<group>";
+		};
+		1337333C2BF4984500941F04 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1337333D2BF4984500941F04 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		133733442BF4ABED00941F04 /* 3D Model */ = {
+			isa = PBXGroup;
+			children = (
+				13C4C1B42BFC51500073F641 /* Hantu.rcproject */,
+				13A1F25F2BFB60D80000D548 /* Wewegombel.rcproject */,
+				13A1F2572BFAFFA70000D548 /* Kuntilanak.rcproject */,
+				133733452BF4B00200941F04 /* Indonesian ghost kuntilanak.usdz */,
+				13A1F20C2BF6F0100000D548 /* Indonesian ghost kuntilanak.scn */,
+			);
+			path = "3D Model";
+			sourceTree = "<group>";
+		};
+		13A1F20E2BF74A960000D548 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				134B0C0F2BFCEC3C00A0A9B2 /* TutorialView.swift */,
+				13A1F2322BFA2F510000D548 /* TypingAnimationView.swift */,
+				13A1F2302BFA27200000D548 /* OnboardingView.swift */,
+				13A1F2132BF9DB190000D548 /* HomePageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13A1F2162BF9F8030000D548 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				13A1F2252BFA007C0000D548 /* SreeKrushnadevaraya-Regular.ttf */,
+				13A1F21E2BF9F8BA0000D548 /* WaterBrush-Regular.ttf */,
+				13A1F2202BF9F8C50000D548 /* BebasNeue-Regular.ttf */,
+				13A1F2222BF9F8E40000D548 /* Scary Dance Demo.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		13A1F22F2BFA125C0000D548 /* Mp3 */ = {
+			isa = PBXGroup;
+			children = (
+				13A1F23F2BFA3C910000D548 /* Scary Wind.mp3 */,
+				13A1F22C2BFA12570000D548 /* Night Forest 1224.mp3 */,
+				13A1F22B2BFA12560000D548 /* Rain Thunderstorm Loop.mp3 */,
+			);
+			path = Mp3;
+			sourceTree = "<group>";
+		};
+		13A1F23C2BFA39670000D548 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				13C4C1AC2BFC422F0073F641 /* ARCoachingOverlayView.swift */,
+				13A1F23D2BFA3A760000D548 /* Scary.swift */,
+				13A1F23A2BFA39530000D548 /* Blood.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		133733322BF4984300941F04 /* Nano2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 133733412BF4984500941F04 /* Build configuration list for PBXNativeTarget "Nano2" */;
+			buildPhases = (
+				1337332F2BF4984300941F04 /* Sources */,
+				133733302BF4984300941F04 /* Frameworks */,
+				133733312BF4984300941F04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nano2;
+			productName = Nano2;
+			productReference = 133733332BF4984300941F04 /* Nano2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1337332B2BF4984300941F04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					133733322BF4984300941F04 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 1337332E2BF4984300941F04 /* Build configuration list for PBXProject "Nano2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1337332A2BF4984300941F04;
+			productRefGroup = 133733342BF4984300941F04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				133733322BF4984300941F04 /* Nano2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		133733312BF4984300941F04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				133733462BF4B00200941F04 /* Indonesian ghost kuntilanak.usdz in Resources */,
+				13A1F2212BF9F8C50000D548 /* BebasNeue-Regular.ttf in Resources */,
+				13A1F20D2BF6F0100000D548 /* Indonesian ghost kuntilanak.scn in Resources */,
+				1337333E2BF4984500941F04 /* Preview Assets.xcassets in Resources */,
+				13A1F2232BF9F8E40000D548 /* Scary Dance Demo.otf in Resources */,
+				13A1F21F2BF9F8BA0000D548 /* WaterBrush-Regular.ttf in Resources */,
+				13A1F22D2BFA12570000D548 /* Rain Thunderstorm Loop.mp3 in Resources */,
+				13A1F2262BFA007C0000D548 /* SreeKrushnadevaraya-Regular.ttf in Resources */,
+				13A1F2402BFA3C910000D548 /* Scary Wind.mp3 in Resources */,
+				1337333B2BF4984500941F04 /* Assets.xcassets in Resources */,
+				13A1F22E2BFA12570000D548 /* Night Forest 1224.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1337332F2BF4984300941F04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A1F2602BFB60D80000D548 /* Wewegombel.rcproject in Sources */,
+				134B0C102BFCEC3C00A0A9B2 /* TutorialView.swift in Sources */,
+				13A1F23B2BFA39530000D548 /* Blood.swift in Sources */,
+				13A1F25E2BFB2D220000D548 /* JudulView.swift in Sources */,
+				13A1F23E2BFA3A760000D548 /* Scary.swift in Sources */,
+				133733392BF4984300941F04 /* ContentView.swift in Sources */,
+				13C4C1B52BFC51500073F641 /* Hantu.rcproject in Sources */,
+				13A1F2312BFA27200000D548 /* OnboardingView.swift in Sources */,
+				13A1F2142BF9DB190000D548 /* HomePageView.swift in Sources */,
+				13A1F2582BFAFFA70000D548 /* Kuntilanak.rcproject in Sources */,
+				13A1F2332BFA2F510000D548 /* TypingAnimationView.swift in Sources */,
+				13C4C1AD2BFC422F0073F641 /* ARCoachingOverlayView.swift in Sources */,
+				133733372BF4984300941F04 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1337333F2BF4984500941F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		133733402BF4984500941F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		133733422BF4984500941F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nano2/Preview Content\"";
+				DEVELOPMENT_TEAM = 88D2VWU83D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nano2/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.watchostestsasa.Nano2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		133733432BF4984500941F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nano2/Preview Content\"";
+				DEVELOPMENT_TEAM = 88D2VWU83D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nano2/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.watchostestsasa.Nano2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1337332E2BF4984300941F04 /* Build configuration list for PBXProject "Nano2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1337333F2BF4984500941F04 /* Debug */,
+				133733402BF4984500941F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		133733412BF4984500941F04 /* Build configuration list for PBXNativeTarget "Nano2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				133733422BF4984500941F04 /* Debug */,
+				133733432BF4984500941F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1337332B2BF4984300941F04 /* Project object */;
+}
