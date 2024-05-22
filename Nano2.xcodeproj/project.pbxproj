@@ -13,8 +13,8 @@
 		1337333E2BF4984500941F04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1337333D2BF4984500941F04 /* Preview Assets.xcassets */; };
 		133733462BF4B00200941F04 /* Indonesian ghost kuntilanak.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 133733452BF4B00200941F04 /* Indonesian ghost kuntilanak.usdz */; };
 		134B0C102BFCEC3C00A0A9B2 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134B0C0F2BFCEC3C00A0A9B2 /* TutorialView.swift */; };
-		134B0C122BFDA29400A0A9B2 /* Haunting.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 134B0C112BFDA29400A0A9B2 /* Haunting.rcproject */; };
 		134B0C142BFDAE1600A0A9B2 /* EndScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134B0C132BFDAE1600A0A9B2 /* EndScreenView.swift */; };
+		134B0C162BFDC30D00A0A9B2 /* Haunting.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 134B0C152BFDC30D00A0A9B2 /* Haunting.rcproject */; };
 		13A1F20D2BF6F0100000D548 /* Indonesian ghost kuntilanak.scn in Resources */ = {isa = PBXBuildFile; fileRef = 13A1F20C2BF6F0100000D548 /* Indonesian ghost kuntilanak.scn */; };
 		13A1F2142BF9DB190000D548 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1F2132BF9DB190000D548 /* HomePageView.swift */; };
 		13A1F21F2BF9F8BA0000D548 /* WaterBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13A1F21E2BF9F8BA0000D548 /* WaterBrush-Regular.ttf */; };
@@ -41,8 +41,8 @@
 		1337333D2BF4984500941F04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		133733452BF4B00200941F04 /* Indonesian ghost kuntilanak.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Indonesian ghost kuntilanak.usdz"; sourceTree = "<group>"; };
 		134B0C0F2BFCEC3C00A0A9B2 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
-		134B0C112BFDA29400A0A9B2 /* Haunting.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Haunting.rcproject; sourceTree = "<group>"; };
 		134B0C132BFDAE1600A0A9B2 /* EndScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndScreenView.swift; sourceTree = "<group>"; };
+		134B0C152BFDC30D00A0A9B2 /* Haunting.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Haunting.rcproject; sourceTree = "<group>"; };
 		13A1F20C2BF6F0100000D548 /* Indonesian ghost kuntilanak.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Indonesian ghost kuntilanak.scn"; sourceTree = "<group>"; };
 		13A1F2132BF9DB190000D548 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		13A1F21E2BF9F8BA0000D548 /* WaterBrush-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WaterBrush-Regular.ttf"; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 		133733442BF4ABED00941F04 /* 3D Model */ = {
 			isa = PBXGroup;
 			children = (
-				134B0C112BFDA29400A0A9B2 /* Haunting.rcproject */,
+				134B0C152BFDC30D00A0A9B2 /* Haunting.rcproject */,
 				13C4C1B42BFC51500073F641 /* Hantu.rcproject */,
 				133733452BF4B00200941F04 /* Indonesian ghost kuntilanak.usdz */,
 				13A1F20C2BF6F0100000D548 /* Indonesian ghost kuntilanak.scn */,
@@ -250,6 +250,7 @@
 				13A1F23B2BFA39530000D548 /* Blood.swift in Sources */,
 				13A1F25E2BFB2D220000D548 /* JudulView.swift in Sources */,
 				134B0C142BFDAE1600A0A9B2 /* EndScreenView.swift in Sources */,
+				134B0C162BFDC30D00A0A9B2 /* Haunting.rcproject in Sources */,
 				13A1F23E2BFA3A760000D548 /* Scary.swift in Sources */,
 				133733392BF4984300941F04 /* ContentView.swift in Sources */,
 				13C4C1B52BFC51500073F641 /* Hantu.rcproject in Sources */,
@@ -257,7 +258,6 @@
 				13A1F2142BF9DB190000D548 /* HomePageView.swift in Sources */,
 				13A1F2332BFA2F510000D548 /* TypingAnimationView.swift in Sources */,
 				13C4C1AD2BFC422F0073F641 /* ARCoachingOverlayView.swift in Sources */,
-				134B0C122BFDA29400A0A9B2 /* Haunting.rcproject in Sources */,
 				133733372BF4984300941F04 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,8 +401,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,8 +432,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

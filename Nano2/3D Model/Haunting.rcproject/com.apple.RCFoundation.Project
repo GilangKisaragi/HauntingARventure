@@ -3234,6 +3234,37 @@
                             }
                           ],
                           "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "target" : [
+                                            "232ABF60-1D79-4B74-A3AD-2A3844F58751"
+                                          ],
+                                          "userIdentifier" : "End"
+                                        },
+                                        "name" : {
+                                          "type" : "custom"
+                                        }
+                                      },
+                                      "identifier" : "2B6BC630-C41A-45AD-866C-058F0E0C02C2",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "F231AFAD-E957-4724-9D77-EA393862BBF8",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
                         }
                       ],
                       "color" : [
@@ -3318,41 +3349,6 @@
                                 }
                               ],
                               "identifier" : "3D3DEDC1-60DF-4E90-866C-A2280C6EFD09",
-                              "isEnabled" : true
-                            }
-                          ],
-                          "__version" : 1
-                        },
-                        {
-                          "__content" : [
-                            {
-                              "configurations" : [
-                                {
-                                  "__content" : [
-                                    {
-                                      "configurationBox" : {
-                                        "configuration" : {
-                                          "audioType" : "play",
-                                          "filePath" : "audio:46e8770d96dfa554350148262d282022\/deadghostsf.mp3",
-                                          "loops" : false,
-                                          "target" : [
-
-                                          ],
-                                          "volume" : 1
-                                        },
-                                        "name" : {
-                                          "arguments" : "stereoBypass",
-                                          "type" : "soundtrack"
-                                        }
-                                      },
-                                      "identifier" : "9B410560-0405-40B8-98A4-DF6D8B1A3B70",
-                                      "isEnabled" : true
-                                    }
-                                  ],
-                                  "__version" : 1
-                                }
-                              ],
-                              "identifier" : "0D1AF7F4-D5D0-481E-B680-63E92406A719",
                               "isEnabled" : true
                             }
                           ],
@@ -3939,37 +3935,6 @@
                                 }
                               ],
                               "identifier" : "2E6C2420-FE0E-4216-82EE-5C737662D210",
-                              "isEnabled" : true
-                            }
-                          ],
-                          "__version" : 1
-                        },
-                        {
-                          "__content" : [
-                            {
-                              "configurations" : [
-                                {
-                                  "__content" : [
-                                    {
-                                      "configurationBox" : {
-                                        "configuration" : {
-                                          "target" : [
-                                            "232ABF60-1D79-4B74-A3AD-2A3844F58751"
-                                          ],
-                                          "userIdentifier" : "EndScreen"
-                                        },
-                                        "name" : {
-                                          "type" : "custom"
-                                        }
-                                      },
-                                      "identifier" : "8FFF7708-D868-4C37-AED2-C10725E4BB56",
-                                      "isEnabled" : true
-                                    }
-                                  ],
-                                  "__version" : 1
-                                }
-                              ],
-                              "identifier" : "533D4175-6928-48A9-B303-8D74B0559671",
                               "isEnabled" : true
                             }
                           ],

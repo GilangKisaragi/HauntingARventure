@@ -11,12 +11,17 @@ import ARKit
 import SceneKit
 
 struct ContentView : View {
+    @State private var hasSceneEnded = false
     
     var body: some View {
         
         ZStack {
-            ARViewContainer()
+            if !hasSceneEnded {
+                ARViewContainer(hasSceneEnded: $hasSceneEnded)
                 .edgesIgnoringSafeArea(.all)
+            } else {
+                EndScreenView()
+            }
             
             Color.blue900.opacity(0.4)
                 .ignoresSafeArea()
@@ -39,6 +44,9 @@ struct ContentView : View {
 }
 
 struct ARViewContainer: UIViewRepresentable {
+    @Binding var hasSceneEnded: Bool
+    let arView = ARView(frame: .zero)
+    let sessionDelegate = SessionDelegate()
     
     func makeUIView(context: Context) -> ARView {
         
@@ -46,41 +54,56 @@ struct ARViewContainer: UIViewRepresentable {
         
         arView.addCoaching()
         
+        
         //Load cube model
         let anchor = try!Haunting.loadScene()
 
-////        Load the USDZ Model
-//        guard let modelEntity = try? ModelEntity.loadModel(named: "Indonesian ghost kuntilanak") else {
-//             fatalError("Failed to load the USDZ model")
-//         }
-//        
-//        // Set the custom position of the modelEntity here
-//        let position = SIMD3<Double>(x: 0.6, y: 0, z: 0.5) // Set the custom position here
-//        let floatPosition = SIMD3<Float>(Float(position.x), Float(position.y), Float(position.z))
-//        modelEntity.position = floatPosition
-//        
-//        // Create horizontal plane anchor for the content
-//        modelEntity.setScale(SIMD3(x: 1, y: 1, z: 1), relativeTo: nil)
-//        let anchor = AnchorEntity(.plane(.horizontal, classification: .any, minimumBounds: SIMD2<Float>(0.2, 0.2)))
-//        anchor.children.append(modelEntity)
-//        
-//
         // Add the horizontal plane anchor to the scene
         arView.scene.anchors.append(anchor)
         
-//        // Play the animation(s) of the model
-//        for anim in modelEntity.availableAnimations {
-//            modelEntity.playAnimation(anim.repeat(duration: .infinity),
-//                                      transitionDuration: 1.25,
-//                                      startsPaused: false)
-//        }
-
+        // Listen for the "End" notification
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(sessionDelegate.sceneDidEnd),
+            name: Notification.Name("End"),
+            object: nil
+        )
+        arView.session.delegate = sessionDelegate
         return arView
         
     }
     
-    func updateUIView(_ uiView: ARView, context: Context) {}
+    func handleTap(_ sender: UITapGestureRecognizer) {
+        // Send the "End" notification to end the AR session
+        NotificationCenter.default.post(name: Notification.Name("End"), object: nil)
+    }
     
+    func updateUIView(_ uiView: ARView, context: Context) {
+        if hasSceneEnded {
+            let endScreenView = EndScreenView()
+            let hostingController = UIHostingController(rootView: endScreenView)
+            hostingController.modalPresentationStyle = .fullScreen
+            UIApplication.shared.windows.first?.rootViewController?.present(hostingController, animated: true, completion: nil)
+        }
+    }
+}
+
+class SessionDelegate: NSObject, ARSessionDelegate {
+    @objc func session(_ session: ARSession, didFailWithError error: Error) {
+        print("Session failed with error: \(error.localizedDescription)")
+    }
+
+    @objc func sessionWasInterrupted(_ session: ARSession) {
+        print("Session was interrupted")
+    }
+
+    @objc func sessionInterruptionEnded(_ session: ARSession) {
+        print("Session interruption ended")
+    }
+
+    @objc func sceneDidEnd() {
+        print("Scene ended")
+    }
 }
 
 #Preview {
