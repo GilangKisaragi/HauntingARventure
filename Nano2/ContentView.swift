@@ -17,22 +17,24 @@ struct ContentView : View {
         ZStack {
             ARViewContainer()
                 .edgesIgnoringSafeArea(.all)
-                .navigationBarHidden(true)
             
-            Color.blue900.opacity(0.5)
+            Color.blue900.opacity(0.4)
                 .ignoresSafeArea()
             
-//            VStack {
-//                Button {
-//                    
-//                } label: {
-//                    Text("Test")
-//                        .font(.largeTitle)
-//                }
-//                
-//                Spacer()
-//            }
+            VStack {
+                NavigationLink (destination: HomePageView()) {
+                    HStack {
+                        Image("buttonsuren")
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 40)
+                    .padding(.vertical, 24)
+                }
+                
+                Spacer()
+            }
         }
+        .navigationBarHidden(true)
     }
 }
 
@@ -45,7 +47,7 @@ struct ARViewContainer: UIViewRepresentable {
         arView.addCoaching()
         
         //Load cube model
-        let anchor = try!Hantu.loadScene()
+        let anchor = try!Haunting.loadScene()
 
 ////        Load the USDZ Model
 //        guard let modelEntity = try? ModelEntity.loadModel(named: "Indonesian ghost kuntilanak") else {

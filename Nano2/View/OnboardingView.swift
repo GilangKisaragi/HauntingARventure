@@ -39,7 +39,7 @@ struct OnboardingView: View {
                 }
             }
             .onAppear {
-//                playSound()
+                playSound()
                 // Navigate to `DestinationView` after 10 seconds.
                 DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
                     navigateToHomePageView = true

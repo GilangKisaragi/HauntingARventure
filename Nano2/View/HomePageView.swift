@@ -52,8 +52,8 @@ struct HomePageView: View {
                 }
             }
             .onAppear {
-//                playSoundA()
-//                playSoundB()
+                playSoundA()
+                playSoundB()
             }
             .onDisappear {
                 audioPlayerA?.stop()

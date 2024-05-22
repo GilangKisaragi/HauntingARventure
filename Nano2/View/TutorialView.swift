@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct TutorialView: View {
     @State private var scale: CGFloat = 1.5
     @State private var offset: CGSize = .init(width: -350, height: 0)
+    @State private var audioPlayer: AVAudioPlayer?
     
     var body: some View {
         ZStack {
@@ -41,9 +43,9 @@ struct TutorialView: View {
             
             VStack {
                 Spacer()
-                VStack (alignment: .center, spacing: 32) {
+                VStack (alignment: .center, spacing: 16) {
                     Text("to exterminate the ghosts, move as close to them as possible!")
-                        .font(Font.custom("BebasNeue", size: 54))
+                        .font(Font.custom("BebasNeue", size: 40))
                         .foregroundColor(.blue50)
                         .shadow(color: Color(red: 0.86, green: 0.69, blue: 0.69), radius: 12, x: 0, y: 0)
                     
@@ -75,6 +77,25 @@ struct TutorialView: View {
         }
         .ignoresSafeArea()
         .navigationBarBackButtonHidden()
+        .onAppear {
+            playSound()
+        }
+        .onDisappear {
+            audioPlayer?.stop()
+        }
+    }
+    
+    func playSound() {
+        if let path = Bundle.main.path(forResource: "Scary Wind", ofType: "mp3") {
+            let url = URL(fileURLWithPath: path)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.numberOfLoops = -1 // Loop indefinitely
+                audioPlayer?.play()
+            } catch {
+                print("Error loading audio file: \(error.localizedDescription)")
+            }
+        }
     }
 }
 

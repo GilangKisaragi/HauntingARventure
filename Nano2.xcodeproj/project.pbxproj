@@ -13,6 +13,8 @@
 		1337333E2BF4984500941F04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1337333D2BF4984500941F04 /* Preview Assets.xcassets */; };
 		133733462BF4B00200941F04 /* Indonesian ghost kuntilanak.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 133733452BF4B00200941F04 /* Indonesian ghost kuntilanak.usdz */; };
 		134B0C102BFCEC3C00A0A9B2 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134B0C0F2BFCEC3C00A0A9B2 /* TutorialView.swift */; };
+		134B0C122BFDA29400A0A9B2 /* Haunting.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 134B0C112BFDA29400A0A9B2 /* Haunting.rcproject */; };
+		134B0C142BFDAE1600A0A9B2 /* EndScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134B0C132BFDAE1600A0A9B2 /* EndScreenView.swift */; };
 		13A1F20D2BF6F0100000D548 /* Indonesian ghost kuntilanak.scn in Resources */ = {isa = PBXBuildFile; fileRef = 13A1F20C2BF6F0100000D548 /* Indonesian ghost kuntilanak.scn */; };
 		13A1F2142BF9DB190000D548 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1F2132BF9DB190000D548 /* HomePageView.swift */; };
 		13A1F21F2BF9F8BA0000D548 /* WaterBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13A1F21E2BF9F8BA0000D548 /* WaterBrush-Regular.ttf */; };
@@ -26,9 +28,7 @@
 		13A1F23B2BFA39530000D548 /* Blood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1F23A2BFA39530000D548 /* Blood.swift */; };
 		13A1F23E2BFA3A760000D548 /* Scary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1F23D2BFA3A760000D548 /* Scary.swift */; };
 		13A1F2402BFA3C910000D548 /* Scary Wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 13A1F23F2BFA3C910000D548 /* Scary Wind.mp3 */; };
-		13A1F2582BFAFFA70000D548 /* Kuntilanak.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 13A1F2572BFAFFA70000D548 /* Kuntilanak.rcproject */; };
 		13A1F25E2BFB2D220000D548 /* JudulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1F25D2BFB2D220000D548 /* JudulView.swift */; };
-		13A1F2602BFB60D80000D548 /* Wewegombel.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 13A1F25F2BFB60D80000D548 /* Wewegombel.rcproject */; };
 		13C4C1AD2BFC422F0073F641 /* ARCoachingOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C4C1AC2BFC422F0073F641 /* ARCoachingOverlayView.swift */; };
 		13C4C1B52BFC51500073F641 /* Hantu.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 13C4C1B42BFC51500073F641 /* Hantu.rcproject */; };
 /* End PBXBuildFile section */
@@ -41,6 +41,8 @@
 		1337333D2BF4984500941F04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		133733452BF4B00200941F04 /* Indonesian ghost kuntilanak.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Indonesian ghost kuntilanak.usdz"; sourceTree = "<group>"; };
 		134B0C0F2BFCEC3C00A0A9B2 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		134B0C112BFDA29400A0A9B2 /* Haunting.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Haunting.rcproject; sourceTree = "<group>"; };
+		134B0C132BFDAE1600A0A9B2 /* EndScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndScreenView.swift; sourceTree = "<group>"; };
 		13A1F20C2BF6F0100000D548 /* Indonesian ghost kuntilanak.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Indonesian ghost kuntilanak.scn"; sourceTree = "<group>"; };
 		13A1F2132BF9DB190000D548 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		13A1F21E2BF9F8BA0000D548 /* WaterBrush-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WaterBrush-Regular.ttf"; sourceTree = "<group>"; };
@@ -54,9 +56,7 @@
 		13A1F23A2BFA39530000D548 /* Blood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blood.swift; sourceTree = "<group>"; };
 		13A1F23D2BFA3A760000D548 /* Scary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scary.swift; sourceTree = "<group>"; };
 		13A1F23F2BFA3C910000D548 /* Scary Wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Scary Wind.mp3"; sourceTree = "<group>"; };
-		13A1F2572BFAFFA70000D548 /* Kuntilanak.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Kuntilanak.rcproject; sourceTree = "<group>"; };
 		13A1F25D2BFB2D220000D548 /* JudulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JudulView.swift; sourceTree = "<group>"; };
-		13A1F25F2BFB60D80000D548 /* Wewegombel.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Wewegombel.rcproject; sourceTree = "<group>"; };
 		13C4C1AC2BFC422F0073F641 /* ARCoachingOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCoachingOverlayView.swift; sourceTree = "<group>"; };
 		13C4C1B42BFC51500073F641 /* Hantu.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Hantu.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,9 +116,8 @@
 		133733442BF4ABED00941F04 /* 3D Model */ = {
 			isa = PBXGroup;
 			children = (
+				134B0C112BFDA29400A0A9B2 /* Haunting.rcproject */,
 				13C4C1B42BFC51500073F641 /* Hantu.rcproject */,
-				13A1F25F2BFB60D80000D548 /* Wewegombel.rcproject */,
-				13A1F2572BFAFFA70000D548 /* Kuntilanak.rcproject */,
 				133733452BF4B00200941F04 /* Indonesian ghost kuntilanak.usdz */,
 				13A1F20C2BF6F0100000D548 /* Indonesian ghost kuntilanak.scn */,
 			);
@@ -128,6 +127,7 @@
 		13A1F20E2BF74A960000D548 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				134B0C132BFDAE1600A0A9B2 /* EndScreenView.swift */,
 				134B0C0F2BFCEC3C00A0A9B2 /* TutorialView.swift */,
 				13A1F2322BFA2F510000D548 /* TypingAnimationView.swift */,
 				13A1F2302BFA27200000D548 /* OnboardingView.swift */,
@@ -246,18 +246,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13A1F2602BFB60D80000D548 /* Wewegombel.rcproject in Sources */,
 				134B0C102BFCEC3C00A0A9B2 /* TutorialView.swift in Sources */,
 				13A1F23B2BFA39530000D548 /* Blood.swift in Sources */,
 				13A1F25E2BFB2D220000D548 /* JudulView.swift in Sources */,
+				134B0C142BFDAE1600A0A9B2 /* EndScreenView.swift in Sources */,
 				13A1F23E2BFA3A760000D548 /* Scary.swift in Sources */,
 				133733392BF4984300941F04 /* ContentView.swift in Sources */,
 				13C4C1B52BFC51500073F641 /* Hantu.rcproject in Sources */,
 				13A1F2312BFA27200000D548 /* OnboardingView.swift in Sources */,
 				13A1F2142BF9DB190000D548 /* HomePageView.swift in Sources */,
-				13A1F2582BFAFFA70000D548 /* Kuntilanak.rcproject in Sources */,
 				13A1F2332BFA2F510000D548 /* TypingAnimationView.swift in Sources */,
 				13C4C1AD2BFC422F0073F641 /* ARCoachingOverlayView.swift in Sources */,
+				134B0C122BFDA29400A0A9B2 /* Haunting.rcproject in Sources */,
 				133733372BF4984300941F04 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
