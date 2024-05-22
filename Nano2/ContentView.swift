@@ -11,7 +11,7 @@ import ARKit
 import SceneKit
 
 struct ContentView : View {
-    
+    @State private var showButton = false
     var body: some View {
         
         ZStack {
@@ -21,17 +21,40 @@ struct ContentView : View {
             Color.blue900.opacity(0.4)
                 .ignoresSafeArea()
             
-            VStack {
-                NavigationLink (destination: HomePageView()) {
-                    HStack {
-                        Image("buttonsuren")
+            HStack {
+                VStack {
+                    NavigationLink (destination: EndScreenView()) {
+                        HStack {
+                            Image("buttonsuren")
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.horizontal, 40)
+                        .padding(.vertical, 24)
                     }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.horizontal, 40)
-                    .padding(.vertical, 24)
+                    
+                    Spacer()
                 }
-                
-                Spacer()
+            
+                VStack {
+                    NavigationLink (destination: SecondView()) {
+                        HStack {
+                            if showButton {
+                                Image("buttonscene")
+                            }
+                        }
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                        .padding(.horizontal, 40)
+                        .padding(.vertical, 24)
+                    }
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+                            withAnimation {
+                                self.showButton = true
+                            }
+                        }
+                    }
+                    Spacer()
+                }
             }
         }
         .navigationBarHidden(true)
@@ -48,32 +71,10 @@ struct ARViewContainer: UIViewRepresentable {
         
         //Load cube model
         let anchor = try!Haunting.loadScene()
-
-////        Load the USDZ Model
-//        guard let modelEntity = try? ModelEntity.loadModel(named: "Indonesian ghost kuntilanak") else {
-//             fatalError("Failed to load the USDZ model")
-//         }
-//        
-//        // Set the custom position of the modelEntity here
-//        let position = SIMD3<Double>(x: 0.6, y: 0, z: 0.5) // Set the custom position here
-//        let floatPosition = SIMD3<Float>(Float(position.x), Float(position.y), Float(position.z))
-//        modelEntity.position = floatPosition
-//        
-//        // Create horizontal plane anchor for the content
-//        modelEntity.setScale(SIMD3(x: 1, y: 1, z: 1), relativeTo: nil)
-//        let anchor = AnchorEntity(.plane(.horizontal, classification: .any, minimumBounds: SIMD2<Float>(0.2, 0.2)))
-//        anchor.children.append(modelEntity)
-//        
-//
         // Add the horizontal plane anchor to the scene
         arView.scene.anchors.append(anchor)
         
-//        // Play the animation(s) of the model
-//        for anim in modelEntity.availableAnimations {
-//            modelEntity.playAnimation(anim.repeat(duration: .infinity),
-//                                      transitionDuration: 1.25,
-//                                      startsPaused: false)
-//        }
+        
 
         return arView
         

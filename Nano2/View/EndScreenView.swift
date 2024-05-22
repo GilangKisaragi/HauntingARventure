@@ -31,6 +31,7 @@ struct EndScreenView: View {
             }
         }
         .ignoresSafeArea()
+        .navigationBarBackButtonHidden()
     }
 }
 

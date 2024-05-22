@@ -1120,34 +1120,6 @@
                             }
                           ],
                           "__version" : 1
-                        },
-                        {
-                          "__content" : [
-                            {
-                              "configurations" : [
-                                {
-                                  "__content" : [
-                                    {
-                                      "configurationBox" : {
-                                        "configuration" : {
-                                          "targetScene" : "49B731B8-80B1-42A6-B129-0D2E2E708117"
-                                        },
-                                        "name" : {
-                                          "type" : "changeScene"
-                                        }
-                                      },
-                                      "identifier" : "37976E8E-5DD4-4CBA-B794-63E6001BBD85",
-                                      "isEnabled" : true
-                                    }
-                                  ],
-                                  "__version" : 1
-                                }
-                              ],
-                              "identifier" : "BFB94125-40AE-411B-AF4E-F5E0F51B1BD3",
-                              "isEnabled" : true
-                            }
-                          ],
-                          "__version" : 1
                         }
                       ],
                       "color" : [
@@ -1176,6 +1148,83 @@
                                 "name" : "proximity"
                               },
                               "identifier" : "52DEB316-AB4C-4D80-B1B1-4DCE6B353327",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                },
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "targetScene" : "49B731B8-80B1-42A6-B129-0D2E2E708117"
+                                        },
+                                        "name" : {
+                                          "type" : "changeScene"
+                                        }
+                                      },
+                                      "identifier" : "F70ED4A8-A14E-408B-879D-3B2B4A1C0C10",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "C0F28452-DE35-46AC-A2F4-9B27C5334546",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.8627451,
+                        0.33333334,
+                        0.41568628,
+                        1
+                      ],
+                      "identifier" : "D05E9BA4-0CEA-4044-8697-2A252A5EDBFB",
+                      "isEnabled" : true,
+                      "isLooping" : false,
+                      "isModal" : false,
+                      "name" : "Behavior 10",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+                                  "distance" : 2.0488474,
+                                  "target" : [
+                                    "89332CC1-E6A8-44EE-B2AB-944EC70A521B"
+                                  ],
+                                  "type" : 0
+                                },
+                                "name" : "proximity"
+                              },
+                              "identifier" : "ADA8D594-647C-4A55-8E22-17F369134F2F",
                               "isEnabled" : true
                             }
                           ],
@@ -3234,6 +3283,37 @@
                             }
                           ],
                           "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "target" : [
+                                            "232ABF60-1D79-4B74-A3AD-2A3844F58751"
+                                          ],
+                                          "userIdentifier" : "End"
+                                        },
+                                        "name" : {
+                                          "type" : "custom"
+                                        }
+                                      },
+                                      "identifier" : "2B6BC630-C41A-45AD-866C-058F0E0C02C2",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "F231AFAD-E957-4724-9D77-EA393862BBF8",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
                         }
                       ],
                       "color" : [
@@ -3318,41 +3398,6 @@
                                 }
                               ],
                               "identifier" : "3D3DEDC1-60DF-4E90-866C-A2280C6EFD09",
-                              "isEnabled" : true
-                            }
-                          ],
-                          "__version" : 1
-                        },
-                        {
-                          "__content" : [
-                            {
-                              "configurations" : [
-                                {
-                                  "__content" : [
-                                    {
-                                      "configurationBox" : {
-                                        "configuration" : {
-                                          "audioType" : "play",
-                                          "filePath" : "audio:46e8770d96dfa554350148262d282022\/deadghostsf.mp3",
-                                          "loops" : false,
-                                          "target" : [
-
-                                          ],
-                                          "volume" : 1
-                                        },
-                                        "name" : {
-                                          "arguments" : "stereoBypass",
-                                          "type" : "soundtrack"
-                                        }
-                                      },
-                                      "identifier" : "9B410560-0405-40B8-98A4-DF6D8B1A3B70",
-                                      "isEnabled" : true
-                                    }
-                                  ],
-                                  "__version" : 1
-                                }
-                              ],
-                              "identifier" : "0D1AF7F4-D5D0-481E-B680-63E92406A719",
                               "isEnabled" : true
                             }
                           ],
@@ -3939,37 +3984,6 @@
                                 }
                               ],
                               "identifier" : "2E6C2420-FE0E-4216-82EE-5C737662D210",
-                              "isEnabled" : true
-                            }
-                          ],
-                          "__version" : 1
-                        },
-                        {
-                          "__content" : [
-                            {
-                              "configurations" : [
-                                {
-                                  "__content" : [
-                                    {
-                                      "configurationBox" : {
-                                        "configuration" : {
-                                          "target" : [
-                                            "232ABF60-1D79-4B74-A3AD-2A3844F58751"
-                                          ],
-                                          "userIdentifier" : "EndScreen"
-                                        },
-                                        "name" : {
-                                          "type" : "custom"
-                                        }
-                                      },
-                                      "identifier" : "8FFF7708-D868-4C37-AED2-C10725E4BB56",
-                                      "isEnabled" : true
-                                    }
-                                  ],
-                                  "__version" : 1
-                                }
-                              ],
-                              "identifier" : "533D4175-6928-48A9-B303-8D74B0559671",
                               "isEnabled" : true
                             }
                           ],

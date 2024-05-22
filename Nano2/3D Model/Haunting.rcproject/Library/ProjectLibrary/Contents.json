@@ -1,13 +1,13 @@
 [
   {
+    "format" : "model",
     "libraryIdentifier" : "340ce3bafbcec58aae36029cc1522c3a",
-    "displayName" : "Wewe Gombel Indonesian Ghost.usdz",
-    "format" : "model"
+    "displayName" : "Wewe Gombel Indonesian Ghost.usdz"
   },
   {
-    "displayName" : "Indonesian ghost kuntilanak.usdz",
+    "format" : "model",
     "libraryIdentifier" : "c472666003640deeed176f28bfca854a",
-    "format" : "model"
+    "displayName" : "Indonesian ghost kuntilanak.usdz"
   },
   {
     "libraryIdentifier" : "bc8f7c22a5fa72e442ebcd1d0b12d2eb",
@@ -15,8 +15,8 @@
     "displayName" : "Lady of the Asylum.usdz"
   },
   {
-    "libraryIdentifier" : "f90c2de578b80e5db4e3f25f531c8056",
     "displayName" : "GhostWoman.usdz",
+    "libraryIdentifier" : "f90c2de578b80e5db4e3f25f531c8056",
     "format" : "model"
   },
   {
@@ -26,13 +26,13 @@
   },
   {
     "libraryIdentifier" : "3ad5cbedf374f97e2617d69dfff7edcb",
-    "displayName" : "Creepy Breathing Sound.mp3",
-    "format" : "audio"
+    "format" : "audio",
+    "displayName" : "Creepy Breathing Sound.mp3"
   },
   {
-    "format" : "audio",
     "displayName" : "Crying Woman Manic Sound.mp3",
-    "libraryIdentifier" : "106903d41f82fd667fb1a930a589ada7"
+    "libraryIdentifier" : "106903d41f82fd667fb1a930a589ada7",
+    "format" : "audio"
   },
   {
     "displayName" : "Classic Zombie Half Life 2.usdz",
@@ -40,13 +40,13 @@
     "format" : "model"
   },
   {
-    "displayName" : "Backrooms Skin Stealer animations.usdz",
     "libraryIdentifier" : "39961e970fc2006257e8188bc902d661",
+    "displayName" : "Backrooms Skin Stealer animations.usdz",
     "format" : "model"
   },
   {
-    "format" : "model",
     "libraryIdentifier" : "98520b475b8c0dd64a1e69de998a4f93",
+    "format" : "model",
     "displayName" : "Classic Zombie Torso Half Life 2.usdz"
   },
   {
@@ -55,19 +55,19 @@
     "displayName" : "SCP-3199.usdz"
   },
   {
-    "displayName" : "Horror Monster.usdz",
     "libraryIdentifier" : "e1557dd002cfb3e81662e48e8342990f",
-    "format" : "model"
-  },
-  {
-    "displayName" : "Human Experiment 3D Model.usdz",
-    "libraryIdentifier" : "edcca98111af6d770a904090e4f8d96f",
-    "format" : "model"
-  },
-  {
     "format" : "model",
+    "displayName" : "Horror Monster.usdz"
+  },
+  {
+    "libraryIdentifier" : "edcca98111af6d770a904090e4f8d96f",
+    "format" : "model",
+    "displayName" : "Human Experiment 3D Model.usdz"
+  },
+  {
     "displayName" : "Monster model.usdz",
-    "libraryIdentifier" : "b25a231c5cc662b458eb8647383c6b56"
+    "libraryIdentifier" : "b25a231c5cc662b458eb8647383c6b56",
+    "format" : "model"
   },
   {
     "libraryIdentifier" : "8e7088d5d3eb393f47a3da46b9c6ad27",
@@ -76,8 +76,8 @@
   },
   {
     "displayName" : "Zombie Monster Necromorph.usdz",
-    "libraryIdentifier" : "fb9d8dcbb4fa4904d12aaa22d8a78932",
-    "format" : "model"
+    "format" : "model",
+    "libraryIdentifier" : "fb9d8dcbb4fa4904d12aaa22d8a78932"
   },
   {
     "displayName" : "Demonic Possessed Woman Sound.mp3",
@@ -85,9 +85,9 @@
     "format" : "audio"
   },
   {
-    "libraryIdentifier" : "ba41b2b2ad71266a3c2072c831b3bb9f",
+    "displayName" : "Banshee sounds.mp3",
     "format" : "audio",
-    "displayName" : "Banshee sounds.mp3"
+    "libraryIdentifier" : "ba41b2b2ad71266a3c2072c831b3bb9f"
   },
   {
     "displayName" : "Stranger Things Monster Sound.mp3",
@@ -96,22 +96,22 @@
   },
   {
     "format" : "audio",
-    "libraryIdentifier" : "1c647ac20cdc7bdb0c2a85b3307a1a0c",
-    "displayName" : "SCP-001 prototype sounds.mp3"
+    "displayName" : "SCP-001 prototype sounds.mp3",
+    "libraryIdentifier" : "1c647ac20cdc7bdb0c2a85b3307a1a0c"
   },
   {
+    "libraryIdentifier" : "bc6d263ec006f68ac3c58f3e78dbfcef",
     "displayName" : "Almataha-ha sounds.mp3",
-    "format" : "audio",
-    "libraryIdentifier" : "bc6d263ec006f68ac3c58f3e78dbfcef"
-  },
-  {
-    "libraryIdentifier" : "9aa7b38516b2a25e73c20330dd477891",
-    "displayName" : "Monster Sound Effect Halloween SFX.mp3",
     "format" : "audio"
   },
   {
-    "libraryIdentifier" : "46e8770d96dfa554350148262d282022",
     "format" : "audio",
-    "displayName" : "deadghostsf.mp3"
+    "libraryIdentifier" : "9aa7b38516b2a25e73c20330dd477891",
+    "displayName" : "Monster Sound Effect Halloween SFX.mp3"
+  },
+  {
+    "format" : "audio",
+    "displayName" : "deadghostsf.mp3",
+    "libraryIdentifier" : "46e8770d96dfa554350148262d282022"
   }
 ]
