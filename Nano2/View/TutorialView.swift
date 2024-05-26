@@ -10,78 +10,158 @@ import AVFoundation
 
 struct TutorialView: View {
     @State private var scale: CGFloat = 1.5
+    @State private var scale2: CGFloat = 0.8
+    @State private var offset2: CGSize = .init(width: -240, height: -100)
     @State private var offset: CGSize = .init(width: -350, height: 0)
     @State private var audioPlayer: AVAudioPlayer?
+    @Environment(\.horizontalSizeClass) var sizeClass
     
     var body: some View {
-        ZStack {
-            Image("bgtutorial")
-                .resizable()
-                .scaledToFill()
-            
-            Image("Bezel")
-                .scaleEffect(scale)
-                .offset(offset)
-                .onAppear {
-                    withAnimation(.smooth(duration:2).delay(2)) {
-                        self.scale = 0.8
-                        self.offset = CGSize(width: 50, height: 50)
-                    }
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-                        withAnimation(.smooth(duration: 2)) {
-                            self.scale = 0.6
-                            self.offset = CGSize(width: -50, height: -50)
+        if sizeClass == .compact {
+            // Layout for iPhone
+            ZStack {
+                Image("bgtutorial")
+                    .resizable()
+                    .scaledToFill()
+                    .offset(y: -120)
+                
+                Image("Bezel")
+                    .scaleEffect(scale2)
+                    .offset(offset2)
+                    .onAppear {
+                        withAnimation(.smooth(duration:2).delay(2)) {
+                            self.scale2 = 0.5
+                            self.offset2 = CGSize(width: 50, height: -50)
                         }
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                            withAnimation(.smooth(duration: 2).delay(1)) {
-                                self.scale = 1.5
-                                self.offset = CGSize(width: -350, height: 0)
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                            withAnimation(.smooth(duration: 2)) {
+                                self.scale2 = 0.4
+                                self.offset2 = CGSize(width: -20, height: -120)
+                            }
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                                withAnimation(.smooth(duration: 2).delay(1)) {
+                                    self.scale2 = 0.8
+                                    self.offset2 = CGSize(width: -240, height: -100)
+                                }
                             }
                         }
                     }
-                }
-            
-            VStack {
+             
+                VStack {
                 Spacer()
-                VStack (alignment: .center, spacing: 16) {
-                    Text("to exterminate the ghosts, move as close to them as possible!")
-                        .font(Font.custom("BebasNeue", size: 40))
-                        .foregroundColor(.blue50)
-                        .shadow(color: Color(red: 0.86, green: 0.69, blue: 0.69), radius: 12, x: 0, y: 0)
-                    
-                    VStack (alignment: .trailing) {
-                        NavigationLink (destination: ContentView()) {
-                            Image("buttonNext")
-                                .shadow(color: Color(red: 0.86, green: 0.69, blue: 0.69), radius: 12, x: 0, y: 0)
+                    VStack (alignment: .center, spacing: 0) {
+                        Text("to exterminate the ghosts, move as close to them as possible!")
+                            .font(Font.custom("BebasNeue", size: 32))
+                            .foregroundColor(.blue50)
+                            .shadow(color: Color(red: 0.86, green: 0.69, blue: 0.69), radius: 12, x: 0, y: 0)
+                        
+                        VStack (alignment: .trailing) {
+                            NavigationLink (destination: ContentView()) {
+                                Image("buttonNextiP")
+                                    .shadow(color: Color(red: 0.86, green: 0.69, blue: 0.69), radius: 12, x: 0, y: 0)
+                            }
+                        }
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                        .padding(.horizontal, 24)
+                        
+                    }
+                    .padding(24)
+                    .frame(maxWidth: .infinity, alignment: .top)
+                    .background(
+                    LinearGradient(
+                    stops: [
+                    Gradient.Stop(color: .black, location: 0.00),
+                    Gradient.Stop(color: Color(red: 0.19, green: 0.19, blue: 0.19).opacity(0.54), location: 0.77),
+                    Gradient.Stop(color: Color(red: 0.4, green: 0.4, blue: 0.4).opacity(0), location: 1.00),
+                    ],
+                    startPoint: UnitPoint(x: 0.5, y: 1),
+                    endPoint: UnitPoint(x: 0.5, y: 0)
+                    )
+                )
+                 
+                }
+                .padding(.bottom, 120)
+                
+            }
+            .ignoresSafeArea()
+            .navigationBarBackButtonHidden()
+            .onAppear {
+                playSound()
+            }
+            .onDisappear {
+                audioPlayer?.stop()
+            }
+        } else {
+            // Layout for iPad
+            ZStack {
+                Image("bgtutorial")
+                    .resizable()
+                    .scaledToFill()
+                
+                Image("Bezel")
+                    .scaleEffect(scale)
+                    .offset(offset)
+                    .onAppear {
+                        withAnimation(.smooth(duration:2).delay(2)) {
+                            self.scale = 0.8
+                            self.offset = CGSize(width: 50, height: 50)
+                        }
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                            withAnimation(.smooth(duration: 2)) {
+                                self.scale = 0.6
+                                self.offset = CGSize(width: -50, height: -50)
+                            }
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                                withAnimation(.smooth(duration: 2).delay(1)) {
+                                    self.scale = 1.5
+                                    self.offset = CGSize(width: -350, height: 0)
+                                }
+                            }
                         }
                     }
-                    .frame(maxWidth: .infinity, alignment: .trailing)
-                    .padding(.horizontal, 64)
-                    
-                    
-                }
-                .padding(64)
-                .frame(maxWidth: .infinity, alignment: .top)
-                .background(
-                LinearGradient(
-                stops: [
-                Gradient.Stop(color: .black, location: 0.00),
-                Gradient.Stop(color: Color(red: 0.19, green: 0.19, blue: 0.19).opacity(0.54), location: 0.77),
-                Gradient.Stop(color: Color(red: 0.4, green: 0.4, blue: 0.4).opacity(0), location: 1.00),
-                ],
-                startPoint: UnitPoint(x: 0.5, y: 1),
-                endPoint: UnitPoint(x: 0.5, y: 0)
+                
+                VStack {
+                    Spacer()
+                    VStack (alignment: .center, spacing: 16) {
+                        Text("to exterminate the ghosts, move as close to them as possible!")
+                            .font(Font.custom("BebasNeue", size: 40))
+                            .foregroundColor(.blue50)
+                            .shadow(color: Color(red: 0.86, green: 0.69, blue: 0.69), radius: 12, x: 0, y: 0)
+                        
+                        VStack (alignment: .trailing) {
+                            NavigationLink (destination: ContentView()) {
+                                Image("buttonNext")
+                                    .shadow(color: Color(red: 0.86, green: 0.69, blue: 0.69), radius: 12, x: 0, y: 0)
+                            }
+                        }
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                        .padding(.horizontal, 64)
+                        
+                        
+                    }
+                    .padding(64)
+                    .frame(maxWidth: .infinity, alignment: .top)
+                    .background(
+                    LinearGradient(
+                    stops: [
+                    Gradient.Stop(color: .black, location: 0.00),
+                    Gradient.Stop(color: Color(red: 0.19, green: 0.19, blue: 0.19).opacity(0.54), location: 0.77),
+                    Gradient.Stop(color: Color(red: 0.4, green: 0.4, blue: 0.4).opacity(0), location: 1.00),
+                    ],
+                    startPoint: UnitPoint(x: 0.5, y: 1),
+                    endPoint: UnitPoint(x: 0.5, y: 0)
+                    )
                 )
-            )
+                }
             }
-        }
-        .ignoresSafeArea()
-        .navigationBarBackButtonHidden()
-        .onAppear {
-            playSound()
-        }
-        .onDisappear {
-            audioPlayer?.stop()
+            .ignoresSafeArea()
+            .navigationBarBackButtonHidden()
+            .onAppear {
+                playSound()
+            }
+            .onDisappear {
+                audioPlayer?.stop()
+            }
         }
     }
     

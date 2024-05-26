@@ -12,45 +12,93 @@ struct OnboardingView: View {
     @State private var imageOpacity: Double = 0.0
     @State private var audioPlayer: AVAudioPlayer?
     @State private var navigateToHomePageView = false
+    @Environment(\.horizontalSizeClass) var sizeClass
     
     var body: some View {
-        NavigationStack {
-            ZStack {
-                Color(.black).ignoresSafeArea()
-                
-                VStack(spacing: 24) {
-                    ZStack {
-                        
-                        TypingAnimationView()
-                        
-                        Scary()
-                            .offset(x: -175, y:-60)
-                        
-                        Blood()
-                            .offset(x: -175)
-                    }
+        if sizeClass == .compact {
+            // Layout for iPhone
+            NavigationStack {
+                ZStack {
+                    Color(.black).ignoresSafeArea()
                     
-                    Image("Headset")
-                        .shadow(color: Color(red: 0.86, green: 0.69, blue: 0.69), radius: 12, x: 0, y: 0)
-                        .opacity(imageOpacity)
-                        .onAppear {
-                            fadeInImage()
+                    VStack(spacing: 24) {
+                        ZStack {
+                            
+                            TypingAnimationiPView()
+                            
+                            ScaryiP()
+                                .offset(x: -130, y:-40)
+                            
+                            Bloodip()
+                                .offset(x: -130)
                         }
+                        
+                        Image("Headset")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 180)
+                            .shadow(color: Color(red: 0.86, green: 0.69, blue: 0.69), radius: 12, x: 0, y: 0)
+                            .opacity(imageOpacity)
+                            .onAppear {
+                                fadeInImage()
+                            }
+                    }
+                }
+                .onAppear {
+                    playSound()
+                    // Navigate to `DestinationView` after 10 seconds.
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+                        navigateToHomePageView = true
+                    }
+                }
+                .onDisappear {
+                    audioPlayer?.stop()
+                }
+                
+                NavigationLink(destination: HomePageView(), isActive: $navigateToHomePageView) {
+                    EmptyView()
                 }
             }
-            .onAppear {
-                playSound()
-                // Navigate to `DestinationView` after 10 seconds.
-                DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
-                    navigateToHomePageView = true
+        } else {
+            // Layout for iPad
+            NavigationStack {
+                ZStack {
+                    Color(.black).ignoresSafeArea()
+                    
+                    VStack(spacing: 24) {
+                        ZStack {
+                            
+                            TypingAnimationView()
+                            
+                            Scary()
+                                .offset(x: -175, y:-60)
+                            
+                            Blood()
+                                .offset(x: -175)
+                        }
+                        
+                        Image("Headset")
+                            .shadow(color: Color(red: 0.86, green: 0.69, blue: 0.69), radius: 12, x: 0, y: 0)
+                            .opacity(imageOpacity)
+                            .onAppear {
+                                fadeInImage()
+                            }
+                    }
                 }
-            }
-            .onDisappear {
-                audioPlayer?.stop()
-            }
-            
-            NavigationLink(destination: HomePageView(), isActive: $navigateToHomePageView) {
-                EmptyView()
+                .onAppear {
+                    playSound()
+                    // Navigate to `DestinationView` after 10 seconds.
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+                        navigateToHomePageView = true
+                    }
+                }
+                .onDisappear {
+                    audioPlayer?.stop()
+                }
+                
+                NavigationLink(destination: HomePageView(), isActive: $navigateToHomePageView) {
+                    EmptyView()
+                }
             }
         }
     }

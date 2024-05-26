@@ -10,29 +10,57 @@ import ARKit
 import RealityKit
 
 struct SecondView: View {
+    @Environment(\.horizontalSizeClass) var sizeClass
     var body: some View {
-        ZStack {
-            ARViewContainer2()
-            Color.blue900.opacity(0.4)
-                .ignoresSafeArea()
-            HStack {
-                VStack {
-                    NavigationLink (destination: EndScreenView()) {
-                        HStack {
-                            Image("buttonsuren")
+        if sizeClass == .compact {
+            // Layout for iPhone
+            ZStack {
+                ARViewContainer2()
+                Color.blue900.opacity(0.4)
+                    .ignoresSafeArea()
+                HStack {
+                    VStack {
+                        NavigationLink (destination: EndScreenView()) {
+                            HStack {
+                                Image("buttonendiP")
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.horizontal, 40)
+                            .padding(.vertical, 24)
                         }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.horizontal, 40)
-                        .padding(.vertical, 24)
+                        
+                        Spacer()
                     }
-                    
-                    Spacer()
                 }
+                
             }
-            
+            .ignoresSafeArea()
+            .navigationBarBackButtonHidden()
+        } else {
+            // Layout for iPad
+            ZStack {
+                ARViewContainer2()
+                Color.blue900.opacity(0.4)
+                    .ignoresSafeArea()
+                HStack {
+                    VStack {
+                        NavigationLink (destination: EndScreenView()) {
+                            HStack {
+                                Image("buttonsuren")
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.horizontal, 40)
+                            .padding(.vertical, 24)
+                        }
+                        
+                        Spacer()
+                    }
+                }
+                
+            }
+            .ignoresSafeArea()
+            .navigationBarBackButtonHidden()
         }
-        .ignoresSafeArea()
-        .navigationBarBackButtonHidden()
     }
 }
 

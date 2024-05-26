@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1311FED02C00D6C90053ACBC /* TypingAnimationiPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311FECF2C00D6C90053ACBC /* TypingAnimationiPView.swift */; };
+		1311FED52C00DEAF0053ACBC /* ScaryiP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311FED42C00DEAF0053ACBC /* ScaryiP.swift */; };
+		1311FED92C00E2940053ACBC /* Bloodip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1311FED82C00E2940053ACBC /* Bloodip.swift */; };
 		133733372BF4984300941F04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133733362BF4984300941F04 /* AppDelegate.swift */; };
 		133733392BF4984300941F04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133733382BF4984300941F04 /* ContentView.swift */; };
 		1337333B2BF4984500941F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1337333A2BF4984500941F04 /* Assets.xcassets */; };
@@ -36,7 +39,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		133733332BF4984300941F04 /* Nano2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1311FECF2C00D6C90053ACBC /* TypingAnimationiPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingAnimationiPView.swift; sourceTree = "<group>"; };
+		1311FED42C00DEAF0053ACBC /* ScaryiP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaryiP.swift; sourceTree = "<group>"; };
+		1311FED82C00E2940053ACBC /* Bloodip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bloodip.swift; sourceTree = "<group>"; };
+		133733332BF4984300941F04 /* HauntingAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HauntingAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		133733362BF4984300941F04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		133733382BF4984300941F04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1337333A2BF4984500941F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,7 +95,7 @@
 		133733342BF4984300941F04 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				133733332BF4984300941F04 /* Nano2.app */,
+				133733332BF4984300941F04 /* HauntingAR.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +139,7 @@
 		13A1F20E2BF74A960000D548 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1311FECF2C00D6C90053ACBC /* TypingAnimationiPView.swift */,
 				134B0C132BFDAE1600A0A9B2 /* EndScreenView.swift */,
 				134B0C0F2BFCEC3C00A0A9B2 /* TutorialView.swift */,
 				13A1F2322BFA2F510000D548 /* TypingAnimationView.swift */,
@@ -167,7 +174,9 @@
 			isa = PBXGroup;
 			children = (
 				13C4C1AC2BFC422F0073F641 /* ARCoachingOverlayView.swift */,
+				1311FED42C00DEAF0053ACBC /* ScaryiP.swift */,
 				13A1F23D2BFA3A760000D548 /* Scary.swift */,
+				1311FED82C00E2940053ACBC /* Bloodip.swift */,
 				13A1F23A2BFA39530000D548 /* Blood.swift */,
 			);
 			path = Component;
@@ -176,9 +185,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		133733322BF4984300941F04 /* Nano2 */ = {
+		133733322BF4984300941F04 /* HauntingAR */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 133733412BF4984500941F04 /* Build configuration list for PBXNativeTarget "Nano2" */;
+			buildConfigurationList = 133733412BF4984500941F04 /* Build configuration list for PBXNativeTarget "HauntingAR" */;
 			buildPhases = (
 				1337332F2BF4984300941F04 /* Sources */,
 				133733302BF4984300941F04 /* Frameworks */,
@@ -188,9 +197,9 @@
 			);
 			dependencies = (
 			);
-			name = Nano2;
+			name = HauntingAR;
 			productName = Nano2;
-			productReference = 133733332BF4984300941F04 /* Nano2.app */;
+			productReference = 133733332BF4984300941F04 /* HauntingAR.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +217,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1337332E2BF4984300941F04 /* Build configuration list for PBXProject "Nano2" */;
+			buildConfigurationList = 1337332E2BF4984300941F04 /* Build configuration list for PBXProject "Haunting ARventure" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -221,7 +230,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				133733322BF4984300941F04 /* Nano2 */,
+				133733322BF4984300941F04 /* HauntingAR */,
 			);
 		};
 /* End PBXProject section */
@@ -255,8 +264,10 @@
 				13BD713A2BFDF3C3007E15B6 /* SecondView.swift in Sources */,
 				134B0C102BFCEC3C00A0A9B2 /* TutorialView.swift in Sources */,
 				13A1F23B2BFA39530000D548 /* Blood.swift in Sources */,
+				1311FED52C00DEAF0053ACBC /* ScaryiP.swift in Sources */,
 				13A1F25E2BFB2D220000D548 /* JudulView.swift in Sources */,
 				134B0C142BFDAE1600A0A9B2 /* EndScreenView.swift in Sources */,
+				1311FED02C00D6C90053ACBC /* TypingAnimationiPView.swift in Sources */,
 				13BD71382BFDE432007E15B6 /* Haunting.rcproject in Sources */,
 				13A1F23E2BFA3A760000D548 /* Scary.swift in Sources */,
 				13BD71402BFDF861007E15B6 /* Secondscene.rcproject in Sources */,
@@ -264,6 +275,7 @@
 				13C4C1B52BFC51500073F641 /* Hantu.rcproject in Sources */,
 				13A1F2312BFA27200000D548 /* OnboardingView.swift in Sources */,
 				13A1F2142BF9DB190000D548 /* HomePageView.swift in Sources */,
+				1311FED92C00E2940053ACBC /* Bloodip.swift in Sources */,
 				13A1F2332BFA2F510000D548 /* TypingAnimationView.swift in Sources */,
 				13C4C1AD2BFC422F0073F641 /* ARCoachingOverlayView.swift in Sources */,
 				133733372BF4984300941F04 /* AppDelegate.swift in Sources */,
@@ -457,7 +469,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1337332E2BF4984300941F04 /* Build configuration list for PBXProject "Nano2" */ = {
+		1337332E2BF4984300941F04 /* Build configuration list for PBXProject "Haunting ARventure" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1337333F2BF4984500941F04 /* Debug */,
@@ -466,7 +478,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		133733412BF4984500941F04 /* Build configuration list for PBXNativeTarget "Nano2" */ = {
+		133733412BF4984500941F04 /* Build configuration list for PBXNativeTarget "HauntingAR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				133733422BF4984500941F04 /* Debug */,

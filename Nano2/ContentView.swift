@@ -12,52 +12,101 @@ import SceneKit
 
 struct ContentView : View {
     @State private var showButton = false
+    @Environment(\.horizontalSizeClass) var sizeClass
     var body: some View {
-        
-        ZStack {
-            ARViewContainer()
-                .edgesIgnoringSafeArea(.all)
-            
-            Color.blue900.opacity(0.4)
-                .ignoresSafeArea()
-            
-            HStack {
-                VStack {
-                    NavigationLink (destination: EndScreenView()) {
-                        HStack {
-                            Image("buttonsuren")
+        if sizeClass == .compact {
+            // Layout for iPhone
+            ZStack {
+                ARViewContainer()
+                    .edgesIgnoringSafeArea(.all)
+                
+                Color.blue900.opacity(0.4)
+                    .ignoresSafeArea()
+                
+                HStack {
+                    VStack {
+                        NavigationLink (destination: EndScreenView()) {
+                            HStack {
+                                Image("buttonendiP")
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.horizontal, 0)
+                            .padding(.vertical, 24)
                         }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.horizontal, 40)
-                        .padding(.vertical, 24)
+                        
+                        Spacer()
                     }
-                    
-                    Spacer()
-                }
-            
-                VStack {
-                    NavigationLink (destination: SecondView()) {
-                        HStack {
-                            if showButton {
-                                Image("buttonscene")
+                
+                    VStack {
+                        NavigationLink (destination: SecondView()) {
+                            HStack {
+                                if showButton {
+                                    Image("buttonsceneiP")
+                                }
+                            }
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                            .padding(.horizontal, 0)
+                            .padding(.vertical, 24)
+                        }
+                        .onAppear {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+                                withAnimation {
+                                    self.showButton = true
+                                }
                             }
                         }
-                        .frame(maxWidth: .infinity, alignment: .trailing)
-                        .padding(.horizontal, 40)
-                        .padding(.vertical, 24)
+                        Spacer()
                     }
-                    .onAppear {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
-                            withAnimation {
-                                self.showButton = true
-                            }
-                        }
-                    }
-                    Spacer()
                 }
             }
+            .navigationBarHidden(true)
+        } else {
+            // Layout for iPad
+            ZStack {
+                ARViewContainer()
+                    .edgesIgnoringSafeArea(.all)
+                
+                Color.blue900.opacity(0.4)
+                    .ignoresSafeArea()
+                
+                HStack {
+                    VStack {
+                        NavigationLink (destination: EndScreenView()) {
+                            HStack {
+                                Image("buttonsuren")
+                            }
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.horizontal, 40)
+                            .padding(.vertical, 24)
+                        }
+                        
+                        Spacer()
+                    }
+                
+                    VStack {
+                        NavigationLink (destination: SecondView()) {
+                            HStack {
+                                if showButton {
+                                    Image("buttonscene")
+                                }
+                            }
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                            .padding(.horizontal, 40)
+                            .padding(.vertical, 24)
+                        }
+                        .onAppear {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+                                withAnimation {
+                                    self.showButton = true
+                                }
+                            }
+                        }
+                        Spacer()
+                    }
+                }
+            }
+            .navigationBarHidden(true)
         }
-        .navigationBarHidden(true)
     }
 }
 
